@@ -12,7 +12,7 @@ from config import TOKEN, ADMIN_ID
 vk_session = vk_api.VkApi(token=TOKEN)
 vk = vk_session.get_api()
 longpoll = VkLongPoll(vk_session)
-
+buffer = []
 
 def send_file(user_id, file_path, message_text="📊 Ваш отчёт готов!"):
     """Отправляет документ пользователю ВК."""
