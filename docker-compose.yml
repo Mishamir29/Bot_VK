@@ -1,0 +1,9 @@
+services:
+  vk_time_bot:
+    build: .
+    container_name: vk_async_time_bot_v2
+    restart: always
+    environment:
+      - TZ=Europe/Moscow
+    volumes:
+      - .:/app
